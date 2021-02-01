@@ -1,0 +1,25 @@
+<h1>Hello World<h1>
+
+<%= form_for :job, url: "/jobs", method: :post do |form| %>
+  <%= form.label :url, "Url" %>
+  <%= form.text_field :url %>
+  <%= form.label :employer_name, "Employer " %>
+  <%= form.text_field :employer_name %>
+  <%= form.label :employer_description, "Employer Description" %>
+  <%= form.text_field :employer_description %>
+  <%= form.label :job_title, "Job Title" %>
+  <%= form.text_field :job_title %>
+  <%= form.label :job_description, "Job Description" %>
+  <%= form.text_field :job_description %>
+  <%= form.label :years_of_experience, "Years of Experience" %>
+  <%= form.number_field :years_of_experience %>
+  <%= form.label :education_requirement, "Education Requirements" %>
+  <%= form.text_field :education_requirement %>
+  <%= form.label :industry, "Industry" %>
+  <%= form.text_field :industry %>
+  <%= form.label :base_salary, "Base Salary" %>
+  <%= form.number_field :base_salary %>
+  <%= form.label :employment_type_id, "Employment Type ID" %>
+  <%= form.number_field :employment_type_id %>
+  <%= form.submit "Add Job" %>
+<% end %>
